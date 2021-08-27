@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html >
-
 <head>
   <meta charset="UTF-8">
 	<title>CO2 Emission Predictor</title>
@@ -9,9 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
 </head>
-
 <body>
  <div class="login">
 	<h4>Mramba Gadi Nkalang'ango</h4>
@@ -24,16 +21,10 @@
     	<input type="text" name="enginesize" placeholder="Engine Size" required="required" />
         <input type="text" name="cylinders" placeholder="Cylinders" required="required" />
 		<input type="text" name="fuel" placeholder="Fuel" required="required" />
-
         <button type="submit" class="btn">Predict</button>
     </form>
-
-   <br>
    <br>
    {{ prediction_text }}
-
  </div>
-
-
 </body>
 </html>
