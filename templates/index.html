@@ -14,31 +14,11 @@
 
 <body>
  <div class="login">
-	<h1>Mramba Gadi Nkalang'ango</h1>
-	<h2>App To Predict CO2 Emission of Vehicles</h2>
-     <h3> Enter engine size, number of cylinders and fuel type. For fuel type use the table below to select the appropriate fuel number:</h3>
-<table>
-  <tr>
-    <th>Number to Select</th>
-    <th> Fuel Type</th>
-  </tr>
-  <tr>
-    <td>1:</td>
-    <td>Premium Gasoline</td>
-   </tr>
-  <tr>
-    <td>2:</td>
-    <td>Regular Gasoline</td>
-   </tr>
-  <tr>
-    <td>3:</td>
-    <td>Diesel</td>
-   </tr>
-  <tr>
-    <td>4:</td>
-    <td>Ethanol(E85)</td>
-   </tr>
-</table>
+	<h4>Mramba Gadi Nkalang'ango</h4>
+	<h5>App To Predict CO2 Emission of Vehicles</h5>
+     <h6> Enter engine size, number of cylinders and fuel type. For fuel type use the table below to select the appropriate fuel number:</h6>
+<p> 1: Premium Gasoline, 2: Regular Gasoline, 3: Diesel, 4: Ethanol(E85)
+
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="enginesize" placeholder="Engine Size" required="required" />
