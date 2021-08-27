@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CO2 Emission Predictor</title>
+	<title>CO2 Emission Predictor</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -14,9 +14,31 @@
 
 <body>
  <div class="login">
-	<h1>Predict CO2 Emission of Vehicles</h1>
-     <h3> Enter the following values to predict the CO2 emission from the vehicle</h3>
-
+	<h1>Mramba Gadi Nkalang'ango</h1>
+	<h2>App To Predict CO2 Emission of Vehicles</h2>
+     <h3> Enter engine size, number of cylinders and fuel type. For fuel type use the table below to select the appropriate fuel number:</h3>
+<table>
+  <tr>
+    <th>Number to Select</th>
+    <th> Fuel Type</th>
+  </tr>
+  <tr>
+    <td>1:</td>
+    <td>Premium Gasoline</td>
+   </tr>
+  <tr>
+    <td>2:</td>
+    <td>Regular Gasoline</td>
+   </tr>
+  <tr>
+    <td>3:</td>
+    <td>Diesel</td>
+   </tr>
+  <tr>
+    <td>4:</td>
+    <td>Ethanol(E85)</td>
+   </tr>
+</table>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="enginesize" placeholder="Engine Size" required="required" />
